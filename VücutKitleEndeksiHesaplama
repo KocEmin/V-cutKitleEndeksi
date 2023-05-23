@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class VucutKitleEndeksiHesaplama {
+    public static void main(String[] args) {
+
+        float boy, kilo, endeks;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("Boyunuz (metre cinsinden giriniz) :");
+        boy = girdi.nextFloat();
+
+        System.out.print("Kilonuzu giriniz :");
+        kilo = girdi.nextFloat();
+
+        endeks = kilo/(boy*boy);
+
+        System.out.printf("Vücut Kitle Endeksiniz :" + endeks);
+
+    }
+}
